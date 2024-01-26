@@ -1,0 +1,32 @@
+/* Style for the separator */
+.separator {
+    text-align: center;
+    position: relative;
+    margin: 60px 0 40px 0;
+}
+
+.separator::before, .separator::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    height: 1px;
+    background-color: #333; /* Separator color */
+}
+
+.separator::before {
+    margin-left: 1em; /* Change margin for RTL */
+}
+
+.separator::after {
+    margin-right: 1em; /* Change margin for RTL */
+}
+
+/* Style for the text in the separator */
+.separator-text {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #666; /* Text color */
+    direction: rtl; /* Set text direction to RTL */
+}
