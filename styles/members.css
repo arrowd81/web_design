@@ -1,0 +1,42 @@
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#members-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.member-card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#member-info {
+    display: none;
+    /* max-width: 400px; */
+    margin: 20px auto;
+}
+
+#member-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#back-button {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}

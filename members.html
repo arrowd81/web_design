@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اعضای مجموعه</title>
     <!-- Link to the external stylesheet -->
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/members.css">
+    <!-- icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -34,7 +37,17 @@
         <!-- Add any additional header elements or navigation here -->
     </header>
     
+    <main>
+        <h2>اعضای مجموعه</h2>
+        <div id="members-container"></div>
 
+        <div id="member-info">
+            <h2 id="member-name"></h2>
+            <img id="member-picture" alt="Member Picture">
+            <p id="member-details"></p>
+            <button id="back-button" onclick="goBack()">Back</button>
+        </div>
+    </main>
     
     <footer>
         <div class="footer-container">
@@ -50,5 +63,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/members.js"></script>
 </body>
 </html>
