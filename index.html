@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>هیات اندیشه ورز</title>
     <!-- Link to the external stylesheet -->
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/separator.css">
     <link rel="stylesheet" href="styles/services.css">
     <!-- icons CSS -->
@@ -15,28 +15,28 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
-<body>    
+<body>
     <header>
         <!-- Replace "your_logo.png" with the actual filename or path of your logo image -->
-        <div>
+        <a href="index.html">
             <img src="pictures/logo.png" alt="Logo" width="100" height="50">
             <h3>هیات اندیشه ورز</h1>
-        </div>
+        </a>
         <nav>
             <ul>
-                <li><a href="#">معرفی</a></li>
-                <li><a href="#">اعضا</a></li>
-                <li><a href="#">رویداد ها</a></li>
-                <li><a href="#">زمینه های اندیشه ورزی</a></li>
+                <li><a href="introduction.html">معرفی</a></li>
+                <li><a href="members.html">اعضا</a></li>
+                <li><a href="events.html">رویداد ها</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Dropdown</a>
+                    <a href="articles.html">زمینه های اندیشه ورزی</a>
                     <div class="dropdown-content">
-                      <a href="#">Option 1</a>
-                      <a href="#">Option 2</a>
-                      <a href="#">Option 3</a>
-                    </div>
-                  </li>
-                <li><a href="#">ارتباط با ما</a></li>
+                        <a href="article1.html">زمینه ۱</a>
+                        <a href="article2.html">زمینه ۲</a>
+                        <a href="article3.html">زمینه ۳</a>
+                      </div>
+                </li>
+                <li><a href="call_us.html">تماس با ما</a></li>
+                <li><a href="contact_us.html">ارتباط با ما</a></li>
             </ul>
         </nav>
         <!-- Add any additional header elements or navigation here -->
@@ -148,25 +148,6 @@
     <!-- Slick JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider').slick({
-                autoplay: true,
-                autoplaySpeed: 5000, // Adjust the speed as needed
-                dots: true,
-                arrows: false,
-                rtl: true
-            });
-
-            $('.top_news').slick({
-                autoplay: true,
-                autoplaySpeed: 5000, // Adjust the speed as needed
-                slidesToShow:4,
-                arrows: false,
-                rtl: true,
-            });
-        });
-    </script>
-
+    <script src="scripts/slider.js"></script>
 </body>
 </html>

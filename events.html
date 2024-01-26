@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معرفی</title>
+    <title>رویداد ها</title>
     <!-- Link to the external stylesheet -->
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/introduction.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="styles/separator.css">
     <!-- icons CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -38,32 +39,15 @@
     </header>
 
     <main>
-        <section>
-            <h2>درباره ما</h2>
-            <img src="your-about-image.jpg" alt="About Us Image">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, purus eu dignissim
-                sagittis, nulla odio tincidunt ligula, a varius lectus elit at est. Nunc auctor justo nec justo
-                consectetur, eu gravida ligula tristique.
-            </p>
-        </section>
-
-        <section>
-            <h2>خدمات ما</h2>
-            <img src="your-service-image.jpg" alt="Service Image">
-            <p>
-                درباره خدمات
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis velit quasi cupiditate minima sit voluptatum alias molestias dignissimos qui magnam, cum enim commodi recusandae in nostrum laudantium non dicta.
-            </p>
-        </section>
-
-        <section>
-            <h2>ارتباط با ما</h2>
-            <p>Have questions or need assistance? Feel free to reach out to us at <a href="mailto:info@example.com">info@example.com</a>.</p>
-            <a href="#" class="contact-button">ارتباط با ما</a>
-        </section>
+        <div class="calendar-container" id="calendarContainer">
+            <!-- Events will be dynamically added here -->
+        </div>
+        
+        <div class="event-details" id="eventDetails">
+            <!-- Event details and images will be dynamically added here -->
+        </div>
     </main>
-
+    
     <footer>
         <div class="footer-container">
             <div class="footer-left">
@@ -78,5 +62,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/events.js"></script>
 </body>
 </html>

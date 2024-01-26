@@ -21,13 +21,15 @@ header {
   align-items: center;
 }
 
-header > div{
+header > a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
+    color: white;
 }
 
-header > div h3{
+header > a h3{
     margin-right: 20px;
 }
 
